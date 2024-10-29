@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.demo.dao.CommonRepository">
+	<!--파라미터 없는 쿼리문-->
+    <select id="selectEmpAll" resultType="com.example.demo.model.EmpVo">;
+        SELECT UserId, DeptNm, UserNm, DutyNm
+          FROM TCO_USER WITH(NOLOCK)                  
+    </select>
+    <!--파라미터 있는 쿼리문-->
+    <select id="selectEmp" resultType="com.example.demo.model.EmpVo">;
+        SELECT UserId, DeptNm, UserNm, DutyNm
+          FROM TCO_USER WITH(NOLOCK)       
+         WHERE UserNm LIKE '%' + #{name} + '%'           
+    </select>
+    <!--프로시저 파라미터 여러개-->
+    <select id="listChildSchool" statementType="CALLABLE" parameterType="map" resultType="com.example.demo.model.ChildVo">
+	    { call PHR_ChildSchool_ListChildSchool (#{empNo}, #{type}) }
+	</select>
+</mapper>
