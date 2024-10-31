@@ -14,19 +14,19 @@
 
  ## 2. STS 설치
  - [Spring Tools 사이트](https://spring.io/tools) 접속 후 Spring Tools 4 for Eclipse 설치
-<img src="demo/scan/sts_site.png"  width="800" >  
+<img src="demo/scan/sts_site.png"  width="800" />  
 
  ## 3. Open JDK 설치
   - [azul 사이트](https://www.azul.com/downloads/?package=jdk#zulu) 접속 후 OpenJDK 설치 후 환경변수 설정  
-<img src="demo/scan/azul_site.png"  width="800" >  
+<img src="demo/scan/azul_site.png"  width="800" />  
 
  ## 4. SpringBoot 프로젝트 생성하기
   - File -> New -> Spring Starter Project 클릭
-  <img src="demo/scan/project_create.png"  width="600" >  
-  - Type, Packaging, Java Version 설정 후 Next (Java Version = 설치한 JDK Version)
-<img src="demo/scan/project_create1.png"  width="600" >  
-  - Dependency 선택 후 Finist
-  <img src="demo/scan/project_create2.png"  width="600" >  
+  <img src="demo/scan/project_create.png"  width="500" />  
+  - Type, Packaging, Java Version 설정 후 Next (Java Version = 설치한 JDK Version) 
+  <img src="demo/scan/project_create1.png"  width="400" />  
+  - Dependency 선택 후 Finist 
+  <img src="demo/scan/project_create2.png"  width="400" />  
     - Spring BOot DevTools
     - Spring Web
     - Mybatis Framework
@@ -48,7 +48,7 @@
     - ajax : Javascript에서 XML로 비동기 통신하는 방법
     - JSP : HTML 코드에 Java 코드를 포함한 동적 웹페이지  
 
-  <img src="demo/scan/mvc_flow.png"  width="800" > 
+  <img src="demo/scan/mvc_flow.png"  width="700" /> 
 
  ## 6. Model 생성하기
   - java\com\example\demo\ 경로에 model 패키지 생성 후 java 클래스 생성 및 변수 선언
@@ -332,7 +332,7 @@ public class CommonController {
 }
   ```
   - http://localhost:8080/swagger-ui/index.html 경로로 접속하면 Swagger 사용 가능
-<img src="demo/scan/swagger_page.png"  width="800" >
+<img src="demo/scan/swagger_page.png"  width="800" />
 
 
 
