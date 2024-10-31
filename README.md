@@ -1,6 +1,6 @@
  # Spring Boot REST API 구성하기
 
- STS 환경에서 MS-SQL DB를 연결하여 REST API를 구축하고, Swagger로 테스트하는 방법을 기술합니다. 
+ 💡 STS 환경에서 MS-SQL DB를 연결하여 REST API를 구축하고, Swagger로 테스트하는 방법을 기술합니다. 
 
  ## 1. Spring vs Spring Boot
  - **Spring**
@@ -51,7 +51,7 @@
   <img src="demo/scan/mvc_flow.png"  width="700" /> 
 
  ## 6. Model 생성하기
-  - java\com\example\demo\ 경로에 model 패키지 생성 후 java 클래스 생성 및 변수 선언
+  - 📁 java\com\example\demo\ 경로에 model 패키지 생성 후 java 클래스 생성 및 변수 선언
   ```java
 package com.example.demo.model;
 
@@ -101,7 +101,7 @@ public class EmpVo {
   ```
 
  ## 7. DB 연결하기
-   - resources 경로에 mybatis 폴더 생성
+   - 📁 resources 경로에 mybatis 폴더 생성
    - resources/application.properties에서 DB연결정보를 설정
    ```xml
    spring.application.name=demo
@@ -138,7 +138,7 @@ mybatis.mapper-locations=/mybatis/*.xml
 </mapper>
    ```
 
-   - java\com\example\demo\ 경로에 dao 패키지 생성 후 class 추가
+   - 📁 java\com\example\demo\ 경로에 dao 패키지 생성 후 class 추가
    ```java
    package com.example.demo.dao;
 
@@ -160,7 +160,7 @@ public interface CommonRepository {
    ```
 
  ## 8. Service 생성하기
-   - java\com\example\demo\ 경로에 service 패키지 생성 후 class 추가
+   - 📁 java\com\example\demo\ 경로에 service 패키지 생성 후 class 추가
    ```java
    package com.example.demo.service;
 
@@ -193,7 +193,7 @@ public class CommonService {
    ```
 
  ## 9. Controller 생성하기
-  - java\com\example\demo\ 경로에 controller 패키지 생성 후 class 추가
+  - 📁 java\com\example\demo\ 경로에 controller 패키지 생성 후 class 추가
  ```java
  package com.example.demo.controller;
 
@@ -252,7 +252,7 @@ public class CommonController {
 	implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.0.2'
 }
    ```
-  - java\com\example\demo\ 경로에 swagger 패키지 생성 후 class 생성
+  - 📁 java\com\example\demo\ 경로에 swagger 패키지 생성 후 class 생성
    ```java
    package com.example.demo.swagger;
 
